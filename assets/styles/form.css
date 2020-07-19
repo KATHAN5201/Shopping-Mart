@@ -1,0 +1,92 @@
+input:focus {
+  outline: none;
+}
+
+.signup-page-bg,
+.login-page-bg {
+  background-image: url(../images/sign-up.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  filter:drop-shadow(2px 4px 6px black);
+  position: fixed;
+  top: 1px;
+  opacity: 60%;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+.login-page-bg{
+  background-image: url(../images/login.svg);
+}
+
+.signup-div,
+.login-div{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.signup-form,
+.login-form{
+  width: 100%;
+}
+.signup-form label,
+.login-form label {
+  text-align: center;
+  display: block;
+  font-weight: bold;
+}
+.signup-form input,
+.login-form input {
+  border: 2px solid black;
+  transition: all 0.2s ease;
+  text-align: center;
+  margin: auto;
+  display: block;
+  width: 40%;
+  height: 2.7rem;
+  margin-bottom: 1.5rem;
+  border-radius: 20px;
+}
+.signup-form input:focus,
+.login-form input:focus {
+  background-color: rgb(166, 247, 197);
+}
+
+button[type="submit"] {
+  border: 2px solid darkgreen;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  display: block;
+  width: 10rem;
+  padding: 0.5rem;
+  margin: auto;
+  cursor: pointer;
+  background-color: #70a288ff;
+  transition: all 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  box-shadow: 2px 2px 2px gray;
+}
+
+#end-line{
+    margin:0 auto;
+    width: 40%;
+    text-align: center;
+    padding:1rem;
+    font-weight: bolder;
+    color:#FF1654 ;
+}
+#end-line a {
+    color:#2c1320ff;
+    transition: all .1s ease-in;
+}
+#end-line a:active,
+#end-line a:hover{
+    border-bottom: 2px solid salmon;
+}
