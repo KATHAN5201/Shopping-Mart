@@ -1,4 +1,4 @@
-const tl = new TimelineMax({ repeat: -1, repeatDelay: 1 });
+const tl = new TimelineMax();
 tl.add("cartMove");
 tl.fromTo(
   "#cart",

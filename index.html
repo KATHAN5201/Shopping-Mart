@@ -1,101 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/styles/shared.css">
+    <link rel="stylesheet" href="assets/styles/shared.css" />
+    <link rel="stylesheet" href="assets/styles/animation.css" />
     <title>K-Mart</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="index-bg"></div>
     <header class="main-header">
-        <div class="home-div">
-            <button class="toggle-button">
-                <!-- toggle button svg -->
-                <svg height="25px" version="1.1" viewBox="0 0 25 25" width="25px" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <title />
-                    <desc />
-                    <defs />
-                    <g fill="none" fill-rule="evenodd" id="TabBar-Icons" stroke="none" stroke-width="1">
-                        <g fill="#000000" id="Hamburger">
-                            <path
-                                d="M0,2 L25,2 L25,6 L0,6 L0,2 Z M0,10 L25,10 L25,14 L0,14 L0,10 Z M0,18 L25,18 L25,22 L0,22 L0,18 Z" />
-                        </g>
-                    </g>
-                </svg>
-            </button>
-            <!-- brand logo -->
-            <a href="index.html" class="main-header__brand">KM</a>
-        </div>
+      <div class="home-div">
+        <button class="toggle-button">
+          <!-- toggle button svg -->
+          <svg
+            height="25px"
+            version="1.1"
+            viewBox="0 0 25 25"
+            width="25px"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <title />
+            <desc />
+            <defs />
+            <g
+              fill="none"
+              fill-rule="evenodd"
+              id="TabBar-Icons"
+              stroke="none"
+              stroke-width="1"
+            >
+              <g fill="#000000" id="Hamburger">
+                <path
+                  d="M0,2 L25,2 L25,6 L0,6 L0,2 Z M0,10 L25,10 L25,14 L0,14 L0,10 Z M0,18 L25,18 L25,22 L0,22 L0,18 Z"
+                />
+              </g>
+            </g>
+          </svg>
+        </button>
+        <!-- brand logo -->
+        <a href="index.html" class="main-header__brand">
+          <div class="logo">
+            <svg data-name="Layer 1" viewBox="0 0 278.55 79.08">
+              <title>K-Mart Card</title>
+              <g id="cart">
+                <g id="LeftWheel">
+                  <path
+                    class="cartWithoutWheels"
+                    d="M225.45,165.66a5.75,5.75,0,1,1-5.74-5.74A5.74,5.74,0,0,1,225.45,165.66Z"
+                    transform="translate(-165.72 -103.53)"
+                  />
+                  <g id="LeftWheelCross">
+                    <rect
+                      x="219.23"
+                      y="162.54"
+                      width="0.95"
+                      height="7.39"
+                      transform="translate(-221.01 79.48) rotate(-40.6)"
+                    />
+                    <rect
+                      x="219.26"
+                      y="162.54"
+                      width="0.9"
+                      height="7.39"
+                      transform="translate(-37.69 -197.1) rotate(33.45)"
+                    />
+                  </g>
+                </g>
+                <g id="RightWheel">
+                  <path
+                    class="cartWithoutWheels"
+                    d="M199.68,165.66a5.75,5.75,0,1,1-5.75-5.74A5.75,5.75,0,0,1,199.68,165.66Z"
+                    transform="translate(-165.72 -103.53)"
+                  />
+                  <g id="RightWheelCross">
+                    <rect
+                      x="193.45"
+                      y="161.97"
+                      width="0.95"
+                      height="7.39"
+                      transform="translate(-226.84 62.56) rotate(-40.6)"
+                    />
+                    <rect
+                      x="193.48"
+                      y="161.97"
+                      width="0.9"
+                      height="7.39"
+                      transform="translate(-42.28 -182.98) rotate(33.45)"
+                    />
+                  </g>
+                </g>
+                <g class="cartWithoutWheels">
+                  <path
+                    d="M228.76,161.14H180.68l-2.61-42h-9.74a2.61,2.61,0,0,1,0-5.22H183l2.62,42h43.17a2.62,2.62,0,0,1,0,5.23Z"
+                    transform="translate(-165.72 -103.53)"
+                  />
+                  <polygon
+                    points="18.81 45.77 64.61 45.77 67.05 20.34 15.15 20.34 18.81 45.77"
+                  />
+                  <path
+                    d="M230.33,151.9h-45.8a2.62,2.62,0,0,1-2.59-2.24l-3.66-25.42a2.62,2.62,0,0,1,2.59-3h51.9a2.59,2.59,0,0,1,1.93.86,2.62,2.62,0,0,1,.67,2l-2.44,25.43A2.61,2.61,0,0,1,230.33,151.9Zm-43.54-5.22H228l1.94-20.2h-46Z"
+                    transform="translate(-165.72 -103.53)"
+                  />
+                  <text class="letterK text" transform="translate(33.96 43.15)">
+                    k
+                  </text>
+                </g>
+              </g>
+              <g id="wholeWord">
+                <text
+                  id="art"
+                  class="text wordMart"
+                  transform="translate(132.43 67.88)"
+                >
+                  a
+                  <tspan class="letterR text" x="44.47" y="0">r</tspan>
+                  <tspan class="letterT text" x="81.66" y="0">t</tspan>
+                </text>
+                <text
+                  class="letterM wordMart text"
+                  transform="translate(82.77 67.88)"
+                  id="m"
+                >
+                  m
+                </text>
+              </g>
+            </svg>
+          </div>
+        </a>
+      </div>
 
-        <div class="search-bar">
-            <label for="search">
-                <input type="text" name="search-bar" id="search" />
-            </label>
-            <button type="submit" id="search-btn">
-                <!-- button svg -->
-                <svg height="100%" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1"
-                    viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <path
-                        d="M448.3,424.7L335,311.3c20.8-26,33.3-59.1,33.3-95.1c0-84.1-68.1-152.2-152-152.2c-84,0-152,68.2-152,152.2  s68.1,152.2,152,152.2c36.2,0,69.4-12.7,95.5-33.8L425,448L448.3,424.7z M120.1,312.6c-25.7-25.7-39.8-59.9-39.8-96.3  s14.2-70.6,39.8-96.3S180,80,216.3,80c36.3,0,70.5,14.2,96.2,39.9s39.8,59.9,39.8,96.3s-14.2,70.6-39.8,96.3  c-25.7,25.7-59.9,39.9-96.2,39.9C180,352.5,145.8,338.3,120.1,312.6z"
-                        id="search-icon" />
-                </svg>
-            </button>
-        </div>
+      <div class="search-bar">
+        <label for="search">
+          <input type="text" name="search-bar" id="search" />
+        </label>
+        <button type="submit" id="search-btn">
+          <!-- button svg -->
+          <svg
+            height="100%"
+            id="Layer_1"
+            style="enable-background: new 0 0 512 512;"
+            version="1.1"
+            viewBox="0 0 512 512"
+            width="100%"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <path
+              d="M448.3,424.7L335,311.3c20.8-26,33.3-59.1,33.3-95.1c0-84.1-68.1-152.2-152-152.2c-84,0-152,68.2-152,152.2  s68.1,152.2,152,152.2c36.2,0,69.4-12.7,95.5-33.8L425,448L448.3,424.7z M120.1,312.6c-25.7-25.7-39.8-59.9-39.8-96.3  s14.2-70.6,39.8-96.3S180,80,216.3,80c36.3,0,70.5,14.2,96.2,39.9s39.8,59.9,39.8,96.3s-14.2,70.6-39.8,96.3  c-25.7,25.7-59.9,39.9-96.2,39.9C180,352.5,145.8,338.3,120.1,312.6z"
+              id="search-icon"
+            />
+          </svg>
+        </button>
+      </div>
 
-        <div class="right-panel">
-            <ul class="right-panel__items">
-                <li class="right-panel__item"><a href="assets/login.html">Login</a></li>
-                <li class="right-panel__item"><a href="assets/singnup.html">Sign Up</a></li>
-                <li class="right-panel__item right-panel--cart">
-                    <a href="#">
-                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.26 60.79" width="100%"
-                            height="100%">
-                            <defs>
-                                <style>
-                                    .bag {
-                                        fill: #212121;
-                                    }
-                        
-                                    .bag-text {
-                                        font-size: 31.83px;
-                                        fill: #fff;
-                                        font-family: SukhumvitSet-Bold, Sukhumvit Set;
-                                        font-weight: 700;
-                                    }
-                                </style>
-                            </defs>
-                            <title>Bag</title>
-                            <g id="bag_main">
-                                <rect class="bag" y="14.62" width="34.26" height="38.6" />
-                                <path class="bag"
-                                    d="M17.47,27.64A9.66,9.66,0,0,1,7.83,18V9.65a9.65,9.65,0,1,1,19.29,0V18A9.66,9.66,0,0,1,17.47,27.64Zm0-24.21a6.22,6.22,0,0,0-6.21,6.22V18a6.22,6.22,0,1,0,12.43,0V9.65A6.23,6.23,0,0,0,17.47,3.43Z" />
-                                <text class="bag-text" id='cartQTY' transform="translate(9.37 45.7)">1</text>
-                            </g>
-                        </svg></a>
-                </li>
-            </ul>
-        </div>
+      <div class="right-panel">
+        <ul class="right-panel__items">
+          <li class="right-panel__item">
+            <a href="assets/login.html">Login</a>
+          </li>
+          <li class="right-panel__item">
+            <a href="assets/singnup.html">Sign Up</a>
+          </li>
+          <li class="right-panel__item right-panel--cart">
+            <a href="#">
+              <svg
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 34.26 60.79"
+                width="100%"
+                height="100%"
+              >
+                <defs>
+                  <style>
+                    .bag {
+                      fill: #212121;
+                    }
+
+                    .bag-text {
+                      font-size: 31.83px;
+                      fill: #fff;
+                      font-family: SukhumvitSet-Bold, Sukhumvit Set;
+                      font-weight: 700;
+                    }
+                  </style>
+                </defs>
+                <title>Bag</title>
+                <g id="bag_main">
+                  <rect class="bag" y="14.62" width="34.26" height="38.6" />
+                  <path
+                    class="bag"
+                    d="M17.47,27.64A9.66,9.66,0,0,1,7.83,18V9.65a9.65,9.65,0,1,1,19.29,0V18A9.66,9.66,0,0,1,17.47,27.64Zm0-24.21a6.22,6.22,0,0,0-6.21,6.22V18a6.22,6.22,0,1,0,12.43,0V9.65A6.23,6.23,0,0,0,17.47,3.43Z"
+                  />
+                  <text
+                    class="bag-text"
+                    id="cartQTY"
+                    transform="translate(9.37 45.7)"
+                  >
+                    1
+                  </text>
+                </g>
+              </svg></a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
     <!-- end of main header -->
 
     <header class="sub-header">
-        <nav class="category-div">
-            <ul class="category-div__items">
-                <li class="category-div__item"><a href="assets/stationary.html">Stationary</a></li>
-                <li class="category-div__item"><a href="assets/clothes.html">Clothes</a></li>
-                <li class="category-div__item"><a href="assets/toys.html">Toys</a></li>
-                <li class="category-div__item"><a href="assets/shoes-and-bags.html">Shoes & Bags</a></li>
-                <li class="category-div__item"><a href="assets/grocery.html">Grocery</a></li>
-            </ul>
-        </nav>
+      <nav class="category-div">
+        <ul class="category-div__items">
+          <li class="category-div__item">
+            <a href="assets/stationary.html">Stationary</a>
+          </li>
+          <li class="category-div__item">
+            <a href="assets/clothes.html">Clothes</a>
+          </li>
+          <li class="category-div__item">
+            <a href="assets/toys.html">Toys</a>
+          </li>
+          <li class="category-div__item">
+            <a href="assets/shoes-and-bags.html">Shoes & Bags</a>
+          </li>
+          <li class="category-div__item">
+            <a href="assets/grocery.html">Grocery</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    
-   
+
     <!-- 
     <form action="">
         <label for="email-inp">
@@ -107,6 +246,7 @@
             <br>
         </label>
     </form> -->
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.js"></script>
+    <script src="assets/js/animation.js"></script>
+  </body>
 </html>

@@ -7,7 +7,7 @@ input:focus {
   background-image: url(../images/sign-up.svg);
   background-repeat: no-repeat;
   background-position: center;
-  filter:drop-shadow(2px 4px 6px black);
+  filter: drop-shadow(2px 4px 6px black);
   position: fixed;
   top: 1px;
   opacity: 60%;
@@ -16,22 +16,27 @@ input:focus {
   z-index: -1;
 }
 
-.login-page-bg{
+.login-page-bg {
   background-image: url(../images/login.svg);
 }
-
-.signup-div,
-.login-div{
-  width: 100vw;
+.login-wrapper {
   height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -5rem;
+}
+.signup-div,
+.login-div {
+  width: 100vw;
+  height: max-content;
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
-
 .signup-form,
-.login-form{
+.login-form {
   width: 100%;
 }
 .signup-form label,
@@ -74,19 +79,19 @@ button[type="submit"]:hover {
   box-shadow: 2px 2px 2px gray;
 }
 
-#end-line{
-    margin:0 auto;
-    width: 40%;
-    text-align: center;
-    padding:1rem;
-    font-weight: bolder;
-    color:#FF1654 ;
+#end-line {
+  margin: 0 auto;
+  width: 40%;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bolder;
+  color: #ff1654;
 }
 #end-line a {
-    color:#2c1320ff;
-    transition: all .1s ease-in;
+  color: #2c1320ff;
+  transition: all 0.1s ease-in;
 }
 #end-line a:active,
-#end-line a:hover{
-    border-bottom: 2px solid salmon;
+#end-line a:hover {
+  border-bottom: 2px solid salmon;
 }

@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+@font-face {
+  font-family: "pittsbrook_outlineitalic";
+  src: url("../fonts/pittsbrook_outline_italic-webfont.woff2") format("woff2"),
+    url("../fonts/pittsbrook_outline_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /*
 $polished-pine: #70a288ff;
 $middle-red: #e08d79ff;
@@ -17,8 +24,9 @@ $ash-gray:#C9CEBD;
 a {
   text-decoration: none;
 }
-body{
-  background:#FFCF56;
+body {
+  font-family: "pittsbrook_outlineitalic";
+  background: #ffcf56;
 }
 .index-bg {
   position: fixed;
@@ -83,7 +91,7 @@ body{
 }
 #search-btn {
   cursor: pointer;
-  width: 3rem;
+  width: 2.5rem;
   background-color: #e08d79ff;
   border-left: none;
   border-top: 2px solid #000;
@@ -175,28 +183,27 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width:25%;
+  width: 25%;
   text-align: center;
   border: 2px solid black;
   margin: 1.3rem 0.6rem;
   padding: 0.7rem;
   transition: all 0.2s ease;
-  background:#fff;
+  background: #fff;
 }
-.product-ratings{
-  margin:7px 0;
+.product-ratings {
+  margin: 7px 0;
 }
-.product:hover{
-  box-shadow: 2px 2px 6px  rgba(0, 0, 0, 0.589);
+.product:hover {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.589);
 }
 .product-image {
   max-width: 100%;
   margin-bottom: 10px;
-  
 }
 .add-cart-btn {
-  margin:0.3rem 0 0 0 ;
-  padding:0.1rem;
+  margin: 0.3rem 0 0 0;
+  padding: 0.1rem;
   width: 45%;
   display: block;
   border: none;

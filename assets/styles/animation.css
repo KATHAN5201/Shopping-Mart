@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "pittsbrook_outlineitalic";
+  src: url("../fonts/pittsbrook_outline_italic-webfont.woff2") format("woff2"),
+    url("../fonts/pittsbrook_outline_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   padding: 0;
   margin: 0;
@@ -7,18 +14,18 @@ body {
 
 #RightWheelCross,
 #LeftWheelCross {
-  fill: #531cb3;
+  fill: #fff;
 }
 
 #wholeWord,
 .cartWithoutWheels {
-  fill: #d2e0bf;
+  fill: #1d1a31;
 }
 
 .letterK {
   font-size: 35.96px;
   letter-spacing: -0.02em;
-  fill: #531cb3;
+  fill: #fff;
 }
 
 .letterM {
@@ -35,8 +42,7 @@ body {
 }
 
 .text {
-  font-family: PittsbrookOutline-Italic, Pittsbrook Outline;
-  font-style: italic;
+  font-family: "pittsbrook_outlineitalic";
 }
 
 .wordMart {
@@ -46,7 +52,7 @@ body {
 
 .logo {
   font-family: "Alatsi", sans-serif;
-  width: max-content;
+  width: 100%;
   height: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,7 +63,6 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #531cb3;
 }
 
 .logo svg {
